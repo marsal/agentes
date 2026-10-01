@@ -1,0 +1,35 @@
+{
+  "name": "ia-agentic-workshop",
+  "version": "1.0.0",
+  "description": "Taller LangGraph: ReAct · Supervisor · Plan-and-Execute (viajes + LangSmith)",
+  "type": "module",
+  "scripts": {
+    "workshop:a": "tsx workshop/react/run.ts",
+    "workshop:b": "tsx workshop/supervisor/run.ts",
+    "workshop:c": "tsx workshop/planAndExecute/run.ts",
+    "workshop:react": "tsx workshop/react/run.ts",
+    "workshop:supervisor": "tsx workshop/supervisor/run.ts",
+    "workshop:plan": "tsx workshop/planAndExecute/run.ts",
+    "colab:build": "python3 workshop/colab/build_notebooks.py"
+  },
+  "keywords": [
+    "langgraph",
+    "langchain",
+    "workshop",
+    "agents",
+    "travel"
+  ],
+  "license": "MIT",
+  "devDependencies": {
+    "typescript": "5.8"
+  },
+  "dependencies": {
+    "@langchain/core": "^1.2.12",
+    "@langchain/langgraph": "^1.4.17",
+    "@langchain/openai": "^1.5.13",
+    "dotenv": "^18.0.3",
+    "langchain": "^1.5.14",
+    "tsx": "^4.23.15",
+    "zod": "^3.24.2"
+  }
+}
