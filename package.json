@@ -4,6 +4,9 @@
   "description": "Taller LangGraph: ReAct · Supervisor · Plan-and-Execute (viajes + LangSmith)",
   "type": "module",
   "scripts": {
+    "workshop:a": "tsx workshop/react/run.ts",
+    "workshop:b": "tsx workshop/supervisor/run.ts",
+    "workshop:c": "tsx workshop/planAndExecute/run.ts",
     "workshop:react": "tsx workshop/react/run.ts",
     "workshop:supervisor": "tsx workshop/supervisor/run.ts",
     "workshop:plan": "tsx workshop/planAndExecute/run.ts",

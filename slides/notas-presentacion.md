@@ -153,10 +153,10 @@
 - **Trazabilidad:** cada tool call y cada nodo del grafo.
 - **Diagnóstico:** “¿por qué eligió Delta 440€?” → abrir el run.
 - **Calidad:** evals (hoy solo mencionar).
-- Práctica: con `.env` (`LANGSMITH_TRACING`, proyecto `ia-agentic-workshop`) los runs se llaman:
-  - `workshop-v2-react-0` / `…-colab-0`
-  - `workshop-v2-supervisor-…`
-  - `workshop-v2-plan-execute-…`
+- Práctica: con `.env` (`LANGSMITH_TRACING`, proyecto `ia-agentic-workshop-<nombre>`) los runs se llaman:
+  - `workshop-react` / `workshop-react-colab`
+  - `workshop-supervisor` / `workshop-supervisor-colab`
+  - `workshop-plan-execute` / `workshop-plan-execute-colab`
 - En P&E pedid buscar el trazo **Evaluate → replan** y el segundo vuelo con `callBudget≈…`.
 
 ---
@@ -187,7 +187,7 @@ npm run workshop:b     # Supervisor
 npm run workshop:c     # Plan-and-Execute
 
 # Regenerar Colabs tras cambiar código:
-python3 workshop/colab/build_notebooks.py
+npm run colab:build
 ```
 
 ## Recordatorios rápidos (si se tuerce la live)
